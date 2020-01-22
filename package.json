@@ -4,7 +4,8 @@
   "description": "## Topics",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon -r dotenv/config index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,10 +20,12 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "knex": "^0.20.8",
     "sqlite3": "^4.1.1"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "nodemon": "^2.0.2"
   }
 }
